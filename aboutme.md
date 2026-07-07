@@ -6,7 +6,7 @@ subtitle: How We are Changing Data Science Education
 
 Hi, I'm James. I woke up one morning and realized that there is a huge gap in data pedagogy, and I should fill it.
 
-On the one side, there is a plethora of resources, from blog posts to university-curated MOOCs (massive open online courses), from which a person can learn data science. Then, learners jump to a platform like Kaggle, create their own projects, or get assigned a data task at work.
+On the one side, there is a plethora of resources, from blog posts to university-curated MOOCs (massive open online courses) and boot camps, from which a person can learn data science. Then, learners jump to a platform like Kaggle (online machine learning community), create their own projects, or get assigned a data task at work.
 
 This is a huge jump.
 

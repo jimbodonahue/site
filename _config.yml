@@ -20,11 +20,8 @@ author: James Donahue
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About James: "aboutme"
+  About the Gym: "datagym"
 
 ################
 # --- Logo --- #
@@ -32,7 +29,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/james.jpg"
+avatar: "/assets/img/logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -138,15 +135,15 @@ navbar-var-length: false
 
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#00AA44"
-hover-col: "#FF69B4"
+link-col: "#20C997"
+hover-col: "#0066FF"
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#FF69B4"
+footer-link-col: "#D6336C"
+footer-hover-col: "#0066FF"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
