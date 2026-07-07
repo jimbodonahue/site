@@ -2,9 +2,9 @@
 layout: post
 title: Built By Solar Powered LLMs
 subtitle: The exercise generation machine is run on green power!
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/garden-coding.jpe g
+cover-img: /assets/img/garden-coding.jpeg
+thumbnail-img: /assets/img/garden-coding.jpeg
+share-img: /assets/img/garden-coding.jpeg
 tags: [process, fluff, AI]
 author: James
 ---
