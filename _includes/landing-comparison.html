@@ -1,0 +1,117 @@
+<style>
+.comparison-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.comparison-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #404040;
+}
+
+.comparison-tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #20C997;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.comparison-table th {
+  background-color: #f9f9f9;
+  font-weight: 700;
+  color: #404040;
+  font-size: 0.95rem;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  color: #555;
+  width: 28%;
+}
+
+.comparison-table td {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.feature-highlight {
+  color: #20C997;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .comparison-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+</style>
+
+<section class="comparison-section">
+  <div class="container-md">
+    <h2>How We're Different</h2>
+    <div class="comparison-tagline"><strong>Less content. More capability.</strong></div>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th style="width: 28%;">Platform</th>
+          <th>Approach</th>
+          <th>Our Edge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coursera / Udemy</td>
+          <td>Passive content consumption</td>
+          <td><span class="feature-highlight">Immediate hands-on execution</span> — no hours of lectures, dive right in</td>
+        </tr>
+        <tr>
+          <td>DataCamp / Dataquest</td>
+          <td>Guided syntax completion</td>
+          <td><span class="feature-highlight">Independent methodological reasoning</span> — you decide the approach, not follow a template</td>
+        </tr>
+        <tr>
+          <td>Kaggle / Bootcamps</td>
+          <td>Steep learning curve and overload</td>
+          <td><span class="feature-highlight">Structured micro-challenges with progression</span> — master one analytical "muscle" at a time</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
