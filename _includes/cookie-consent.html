@@ -4,16 +4,6 @@
 
 <script>
   window.CookieConsent.run({
-    onFirstConsent: () => {
-      console.log('Consent given');
-    },
-    onConsent: () => {
-      console.log('Consent updated');
-    },
-    onChange: () => {
-      console.log('Consent changed');
-    },
-    guessLanguage: true,
     categories: {
       necessary: {
         enabled: true,
@@ -25,16 +15,13 @@
       }
     },
     onFirstConsent: () => {
-      // Load analytics scripts after first consent
-      if (window.CookieConsent.getCookie('categories').analytics) {
-        window.location.reload();
-      }
+      console.log('Consent given on first visit');
     },
-    onChange: () => {
-      // Reload page if consent preferences change
-      if (window.CookieConsent.getCategories().analytics.enabled) {
-        window.location.reload();
-      }
+    onConsent: () => {
+      console.log('Consent updated');
+    },
+    onChange: ({cookie}) => {
+      console.log('Consent changed:', cookie.categories);
     },
     cookies: {
       name: 'cc_cookie'
