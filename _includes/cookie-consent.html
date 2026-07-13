@@ -1,0 +1,57 @@
+<!-- Cookie Consent Banner -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.css">
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+
+<script>
+  window.CookieConsent.run({
+    onFirstConsent: () => {
+      console.log('Consent given');
+    },
+    onConsent: () => {
+      console.log('Consent updated');
+    },
+    onChange: () => {
+      console.log('Consent changed');
+    },
+    guessLanguage: true,
+    categories: {
+      necessary: {
+        enabled: true,
+        readOnly: true
+      },
+      analytics: {
+        enabled: false,
+        readOnly: false
+      }
+    },
+    onFirstConsent: () => {
+      // Load analytics scripts after first consent
+      if (window.CookieConsent.getCookie('categories').analytics) {
+        window.location.reload();
+      }
+    },
+    onChange: () => {
+      // Reload page if consent preferences change
+      if (window.CookieConsent.getCategories().analytics.enabled) {
+        window.location.reload();
+      }
+    },
+    cookies: {
+      name: 'cc_cookie'
+    },
+    language: {
+      default: 'en',
+      autoDetect: 'browser'
+    },
+    gui_options: {
+      consentModal: {
+        layout: 'cloud',
+        position: 'bottom center'
+      },
+      preferencesModal: {
+        layout: 'box',
+        equalizer: true
+      }
+    }
+  });
+</script>

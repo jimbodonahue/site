@@ -1,8 +1,11 @@
 {% if site.cloudflare_analytics %}
+{% if jekyll.environment == 'production' %}
 <!-- Cloudflare Web Analytics -->
 <script defer
+    data-cookiecategory="analytics"
     src='https://static.cloudflareinsights.com/beacon.min.js'
     data-cf-beacon='{"token": "{{ site.cloudflare_analytics}}"}'>
 </script>
 <!-- End Cloudflare Web Analytics -->
+{% endif %}
 {% endif %}
